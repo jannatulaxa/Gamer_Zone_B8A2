@@ -21,6 +21,9 @@ header{
     justify-content: space-around;
     align-items: center;
 }
+.logo >img{
+    height: 30px;
+}
 .logo > h1 {
     padding-left: 10px;
 }
@@ -230,8 +233,8 @@ header{
 }
 .card >div:hover{
     border: 5px solid var(--pink);
-
 }
+
 
 
 
@@ -353,6 +356,7 @@ footer{
     padding: 20px;
     font-size: 2rem;
     margin: 30px 0px;
+    cursor: pointer;
 }
 .ftp{
     color: rgba(255, 255, 255, 0.60);
@@ -569,6 +573,9 @@ footer{
     border: none;
 }
 /*     <!-- footer 1 --> */
+footer{
+    padding-bottom: 50px;
+}
 .ftlogo{
     height: 4vh;
     gap: 10px;
@@ -858,6 +865,12 @@ footer{
     border: none;
 }
 /*     <!-- footer 1 --> */
+footer{
+    height: 63vh;
+}
+.ftp{
+    /* padding-bottom: 150px; */
+}
 .ftlogo{
     height: 4vh;
     gap: 10px;
