@@ -170,6 +170,7 @@ header{
     width: 88%;
     margin-top: 50px;
     text-align: left;
+    height: 450px;
 }
 .card > div{
     margin: 0 auto;
@@ -185,10 +186,26 @@ header{
     padding: 1rem;
     visibility:hidden;
 }
+.card > .wn{
+    position: relative;
+    color: var(--pink);
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: relative;
+    left: 5.5vw;
+    color: var(--pink);
+    top: -21vh;
+    visibility:hidden;
+
+}
 .imgcontainer :hover > i{
     visibility: visible;
     cursor: pointer;
 }
+.imgcontainer :hover > .wn{
+    visibility: visible;
+}
+
 .card{
     width: 283px;
     text-align: left;
@@ -364,14 +381,15 @@ footer{
     /* End Header Section */
     .section01{
         flex-direction: column-reverse;
+        
     }
     header{ 
         box-shadow: none;
         margin-bottom: 5vh;
     }
     .banner01{
-        width: 90%;
-        height: 285px;
+        width: 100%;
+        height: 272px;
         margin: 0 auto;
     
     }
@@ -454,7 +472,7 @@ footer{
     width: 55vw;
 }
 .card > p{
-    margin-top: -10vh;
+    margin-top: -9vh;
     font-size: .5rem;
 }
 .card > div> img {
@@ -578,7 +596,22 @@ footer{
     padding-top: 8vh;
     margin: 0 auto;
 }
+.fticon{
+    display: grid;
+    grid-template-areas: "i i i";
+    width: 51vw;
+    padding-top: 5vh;
+    margin: 0 auto;
+
+}
+.fticon > i{
+    padding: 10px 25px;
+    margin: 0;
+    font-size: 1.3rem;
+
+}
 /*     <!-- footer 0 --> */
+}
 
 
 
@@ -586,6 +619,272 @@ footer{
 
 
 
+
+
+
+
+@media screen and (min-width : 576px) and (max-width : 768px) {
+    
+    /* header Style */
+        header{
+            padding-top: 10px;
+            flex-direction: column;
+            gap: 0rem;
+            box-shadow: none;
+            margin-bottom: 5vh; 
+        }
+        .menulist {
+            flex-direction: column;
+            text-align: center;
+            
+        }
+        .hrederul01{
+            
+            flex-direction: column;
+            gap: .8rem;
+            padding: 0;
+        }
+    
+    
+    /* End Header Section */
+    .section01{
+        flex-direction: column-reverse;
+        margin-bottom: 20vh;
+        
+    }
+
+    .banner01{
+        width: 100%;
+        height: 355px;
+        margin: 0 auto;
+    
+    }
+    .banner01text{
+        padding-left: 0;
+        width: auto;
+        margin: 0 auto;
+    }
+    .banner01text > h2{
+        font-size: 2rem;
+        margin-left: 8vw;
+        margin-top: 0;
+    }
+    .banner01text > h1{
+        font-size: 4rem;
+        margin-left: 8vw;
+        padding-bottom: 1vw;
+        margin-top: -9.99vh;
+
+        }
+    .banner01text > p{
+         font-size: 15px;
+         margin-left: 8vw;
+    }
+    
+    .banner02{
+        width: auto;
+        justify-content: center;
+        display: flex;
+    }
+    .banner02 >img {
+        width:80%;
+        height: auto;
+    }
+    .bannerbtn{
+        margin: 0;
+        height: 45px;
+        margin-left: 8vw;
+    }
+    .bannerbtn01 {
+        margin-top: 10px;
+        padding: 5px 20px;
+        background-color: var(--pink);
+        color: #fff;
+        border-radius: 20px;
+        font-size: 15px;
+    }
+    .bannerbtn02 {
+        margin-top: 10px;
+        padding: 5px 20px;
+        background-color: #4EC5F7;
+        color: #fff;
+        border-radius: 20px;
+        font-size: 15px;
+    }
+    /*         <!-- section01 0 --> */
+
+
+    /*         <!-- section02 0 --> */
+    .section02{
+        width: 85vw;
+        margin: 0 auto;
+    }
+    .section02text{
+        width: 77vw;
+        margin: 0 auto;
+    }
+    .section02text > h2{
+        padding-top: 3vh;
+    }
+.section02text > h1{
+    font-size: 1.2rem;
+}
+.section02text > p{
+    color: #534C64;
+    font-size: .5rem;
+}
+.imgcontainer{
+    flex-direction: column;row-gap: 20px;
+    display: grid;
+    grid-template-areas: "card card";
+    justify-content: space-around;
+
+}
+.card{
+    width: 30vw;
+    
+}
+.card > p{
+    margin-top: -11vh;
+    font-size: .5rem;
+    text-align: center;
+}
+.card > div> img {
+    height: 17rem;
+}
+.card > div {
+    width: 30vw;
+    height: 17rem;
+}
+
+/* -- section03 0 -->  */
+.section03{
+    margin-bottom: 20vh;
+    margin-top: 3vh;
+    text-align: center;
+}
+.playgame{
+    flex-direction: column-reverse;
+    gap: 30px;
+}
+.pgimg01{
+    height: 18rem;
+}
+.playgameimg{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.pgimg02{
+    margin-left: -21vw;
+    bottom: -8vh;
+    position: relative;
+    height: 10rem;
+}
+.playgametext{
+    width: 50vw;
+}
+.playgametext>p{
+    font-size: .7rem;
+}
+.playgametext>h1{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/*         <!-- section03 0 --> */
+/*         <!-- section04 1 --> */
+
+.iconcontainer{
+    display: grid;
+    grid-template-areas: 
+    "ibtn ibtn ibtn"
+    "ibtn ibtn ibtn"
+    "ibtn ibtn ibtn";
+}
+.ibtn{
+    margin: 1vw;
+    height: 5vh;
+    font-size: 0.4rem;
+    padding: 0.2rem;
+    align-items: center;
+}
+.ibtn > img{
+    height: 4.5vh;
+}
+.ibtn > h3{
+    padding: 0px 4px;
+}
+.iconcontainer :hover{
+    border: 3px solid var(--pink);
+    cursor: pointer;
+}
+.iconcontainer :hover > h3{
+    border: none;
+    color: var(--pink);
+}
+.iconcontainer :hover > img{
+    border: none;
+}
+/*     <!-- footer 1 --> */
+.ftlogo{
+    height: 4vh;
+    gap: 10px;
+    font-size: .8rem;
+}
+.ftlogo > img {
+    height: 3vh;
+}
+.ftlist1 > ul{
+    display: grid;
+    grid-template-areas:"li li li"
+    "li li li"; 
+    margin: 0 auto;
+    width: 55vw;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    font-size: .8rem;
+    margin-top: 5vh;
+}
+.ftlist2 > ul{
+    display: grid;
+    grid-template-areas:"li li"
+    "li li"; 
+    margin: 0 auto;
+    width: 60vw;
+    text-align: left;
+    gap: 25px;
+    padding: 0;
+    font-size: .8rem;
+    margin-top: 5vh;
+}
+.fticon >i {
+    padding: 20px;
+    font-size: 2rem;
+    margin: 30px 0px;
+}
+.ftp{
+    font-size: .8rem;
+    width: 55vw;
+    padding-top: 8vh;
+    margin: 0 auto;
+}
+.fticon{
+    display: grid;
+    grid-template-areas: "i i i";
+    width: 51vw;
+    padding-top: 5vh;
+    margin: 0 auto;
+
+}
+.fticon > i{
+    padding: 10px 25px;
+    margin: 0;
+    font-size: 1.3rem;
+
+}
+/*     <!-- footer 0 --> */
 
 
 }
