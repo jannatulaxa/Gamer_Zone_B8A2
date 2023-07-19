@@ -87,7 +87,7 @@ header{
     padding-top: 10% ;
 }
 .banner01text > h1{
-    font-size: 6rem;
+    font-size: 5.9rem;
     margin-top: -10% ;
     margin-bottom: 0;
     padding-bottom: 20px;
@@ -281,7 +281,7 @@ header{
     text-align: center;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     padding: 50px 0px;
-
+    height: 35vh;
 }
 .iconcontainer{
     width: 90%;
@@ -315,10 +315,11 @@ header{
 /*         <!-- section04 0 --> */
 /*     <!-- footer 1 --> */
 footer{
-    padding: 110px 0;
+    padding: 82px 0;
     background-color: #0B0223;
     color: #FFF;
     text-align: center;
+    height: 50vh;
 }
 .ftlogo{
     display: flex;
@@ -389,7 +390,7 @@ footer{
     }
     .banner01{
         width: 100%;
-        height: 272px;
+        height: 300px;
         margin: 0 auto;
     
     }
@@ -450,6 +451,8 @@ footer{
     .section02{
         width: 85vw;
         margin: 0 auto;
+        height: 960px;
+        margin-top: 60px;
     }
     .section02text{
         width: 77vw;
@@ -466,7 +469,9 @@ footer{
     font-size: .5rem;
 }
 .imgcontainer{
-    flex-direction: column;row-gap: 20px;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 430px;
 }
 .card{
     width: 55vw;
@@ -486,8 +491,9 @@ footer{
 /* -- section03 0 -->  */
 .section03{
     margin-bottom: 20vh;
-    margin-top: 3vh;
+    margin-top: 55vh;
     text-align: center;
+    height: 490px;
 }
 .playgame{
     flex-direction: column-reverse;
@@ -520,7 +526,9 @@ footer{
 
 /*         <!-- section03 0 --> */
 /*         <!-- section04 1 --> */
-
+.section04{
+    height: 140px;
+}
 .iconcontainer{
     display: grid;
     grid-template-areas: 
@@ -544,6 +552,14 @@ footer{
 .iconcontainer :hover{
     border: 3px solid var(--pink);
     cursor: pointer;
+}
+.imgcontainer :hover > i{
+    left: 5.5rem;
+
+}
+.imgcontainer :hover> .wn{
+    left: 12.5vw;
+
 }
 .iconcontainer :hover > h3{
     border: none;
@@ -667,13 +683,13 @@ footer{
     .banner01text > h2{
         font-size: 2rem;
         margin-left: 8vw;
-        margin-top: 0;
+        margin-top: -2%;
     }
     .banner01text > h1{
         font-size: 4rem;
         margin-left: 8vw;
         padding-bottom: 1vw;
-        margin-top: -9.99vh;
+        margin-top: -3vh;
 
         }
     .banner01text > p{
@@ -718,6 +734,7 @@ footer{
     .section02{
         width: 85vw;
         margin: 0 auto;
+        margin-top: -51px;
     }
     .section02text{
         width: 77vw;
@@ -738,6 +755,16 @@ footer{
     display: grid;
     grid-template-areas: "card card";
     justify-content: space-around;
+    row-gap: 20px;
+
+
+}
+.imgcontainer :hover > i{
+    left: 5.5rem;
+
+}
+.imgcontainer :hover> .wn{
+    left: 1.5vw;
 
 }
 .card{
@@ -745,12 +772,13 @@ footer{
     
 }
 .card > p{
-    margin-top: -11vh;
+    margin-top: -9vh;
     font-size: .5rem;
     text-align: center;
 }
 .card > div> img {
     height: 17rem;
+    /* width: 100%; */
 }
 .card > div {
     width: 30vw;
@@ -760,7 +788,7 @@ footer{
 /* -- section03 0 -->  */
 .section03{
     margin-bottom: 20vh;
-    margin-top: 3vh;
+    margin-top: 35vh;
     text-align: center;
 }
 .playgame{
@@ -794,7 +822,10 @@ footer{
 
 /*         <!-- section03 0 --> */
 /*         <!-- section04 1 --> */
+.section04{
+    height: 25vh;
 
+}
 .iconcontainer{
     display: grid;
     grid-template-areas: 
