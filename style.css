@@ -141,7 +141,7 @@ header{
 }
 /*         <!-- section01 0 --> */
 /*         <!-- section02 1 --> */
-.section02{
+/* .section02{
     margin-top: 100px;
     text-align: center;
 }
@@ -201,11 +201,11 @@ header{
     visibility:hidden;
 
 }
-.imgcontainer :hover > i{
+.card :hover > i{
     visibility: visible;
     cursor: pointer;
 }
-.imgcontainer :hover > .wn{
+.card :hover > .wn{
     visibility: visible;
 }
 
@@ -228,20 +228,93 @@ header{
     overflow: hidden;
     border-radius: 15px;
 }
-.imgcontainer :hover > img{
+.card:hover > img{
     opacity: 0.3;
 }
 .card >div:hover{
     border: 5px solid var(--pink);
+} */
+.section02{
+    text-align: center;
+    height: 580px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+
 }
+.section02text{
+    padding-bottom: 50px;
 
+}
+.section02img{
+    display: flex;
+    align-items: center;
+    /* gap: 20px; */
+    justify-content: center;
+    height: 450px;
 
+}
+.imgcontainer{
+    display: flex;
+    justify-content: space-between;
+    /* align-items:center ; */
+    width: 80%;
+    height: 450px;
 
+}
+.card{
+    width: 280px;
+}
+.cardhover{
+    position: relative;
+    /* background-color: black; */
+    height: 328px;
+
+}
+.cardhover >img {
+    height: auto;
+    width: 280px;
+    
+}
+.cardhover:hover > .cardicon{
+    visibility: visible;
+    border: 4px solid var(--pink);
+    
+}
+.cardicon {
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    left: 0;
+    right: 0;
+    /* margin: auto; */
+    bottom: 0;
+    padding-top: 120px;
+    color: var(--pink);
+    border-radius: 10px;
+    visibility: hidden;
+}
+.cardicon > i{
+    font-size: 1.5rem;
+}
+.wn{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.fv{font-weight: 900;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.section02text >p{
+    color: rgb(146, 146, 146);
+    font-size: 11px;
+}
 
 /*         <!-- section02 0 --> */
 /*         <!-- section03 1 --> */
 .section03{
-    margin-top: 100px;
+    /* margin-top: 100px; */
     margin-bottom: 250px;
 }
 .playgame{
@@ -352,18 +425,19 @@ footer{
     color: rgba(255, 255, 255, 0.60);
 }
 
-.fticon >i {
+.fticon>a >i {
     padding: 20px;
     font-size: 2rem;
     margin: 30px 0px;
     cursor: pointer;
+    color: #FFF;
 }
 .ftp{
     color: rgba(255, 255, 255, 0.60);
 
 }
 /*     <!-- footer 0 --> */
-@media screen and (min-width : 320px) and (max-width : 576px) {
+@media screen  and (max-width : 576px) {
     
     /* header Style */
         header{
@@ -452,7 +526,7 @@ footer{
 
 
     /*         <!-- section02 0 --> */
-    .section02{
+    /* .section02{
         width: 85vw;
         margin: 0 auto;
         height: 960px;
@@ -465,37 +539,65 @@ footer{
     .section02text > h2{
         padding-top: 3vh;
     }
-.section02text > h1{
-    font-size: 1.2rem;
-}
-.section02text > p{
-    color: #534C64;
-    font-size: .5rem;
-}
-.imgcontainer{
-    flex-direction: column;
-    row-gap: 20px;
-    margin-top: 430px;
-}
-.card{
-    width: 55vw;
-}
-.card > p{
-    margin-top: -9vh;
-    font-size: .5rem;
-}
-.card > div> img {
-    height: 17rem;
-}
-.card > div {
-    width: 54vw;
-    height: 17rem;
-}
+    .section02text > h1{
+        font-size: 1.2rem;
+    }
+    .section02text > p{
+        color: #534C64;
+        font-size: .5rem;
+    }
+    .imgcontainer{
+        flex-direction: column;
+        row-gap: 20px;
+        margin-top: 430px;
+    }
+    .card{
+        width: 55vw;
+    }
+    .card > p{
+        margin-top: -9vh;
+        font-size: .5rem;
+    }
+    .card > div> img {
+        height: 17rem;
+    }
+    .card > div {
+        width: 54vw;
+        height: 17rem;
+    } */
+    .imgcontainer{
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
 
+    }
+    .section02{
+        height: 1840px;
+
+    }
+
+
+
+
+
+    .cardhover >img {
+    height: auto;
+    width: 235px;
+}
+.cardhover {
+    margin-left: 22px;
+    width: 236px;
+    height: 275px;
+}
+.section02 {
+    height: 1710px;
+    padding-bottom: 0px;
+
+}
 /* -- section03 0 -->  */
 .section03{
     margin-bottom: 20vh;
-    margin-top: 55vh;
+    /* margin-top: 55vh; */
     text-align: center;
     height: 490px;
 }
@@ -504,7 +606,7 @@ footer{
     gap: 30px;
 }
 .pgimg01{
-    height: 18rem;
+    height: 13rem;
 }
 .playgameimg{
     display: flex;
@@ -610,7 +712,7 @@ footer{
     font-size: .8rem;
     margin-top: 5vh;
 }
-.fticon >i {
+.fticon>a >i {
     padding: 20px;
     font-size: 2rem;
     margin: 30px 0px;
@@ -625,16 +727,16 @@ footer{
 .fticon{
     display: grid;
     grid-template-areas: "i i i";
-    width: 51vw;
+    width: 68vw;
     padding-top: 5vh;
     margin: 0 auto;
 
 }
-.fticon > i{
+.fticon>a > i{
     padding: 10px 25px;
     margin: 0;
     font-size: 1.3rem;
-
+    color: white;
 }
 /*     <!-- footer 0 --> */
 }
@@ -741,7 +843,7 @@ footer{
 
 
     /*         <!-- section02 0 --> */
-    .section02{
+    /* .section02{
         width: 85vw;
         margin: 0 auto;
         margin-top: -51px;
@@ -789,16 +891,24 @@ footer{
 .card > div> img {
     height: 17rem;
     /* width: 100%; */
+/* } */
+
+.imgcontainer{
+    display: grid;
+    grid-template-areas: "card card";
+    gap: 50px;
+
 }
-.card > div {
-    width: 30vw;
-    height: 17rem;
+.section02 {
+    height: 1000px;
+    padding-top: 0;
+
 }
 
 /* -- section03 0 -->  */
 .section03{
     margin-bottom: 20vh;
-    margin-top: 35vh;
+    /* margin-top: 35vh; */
     text-align: center;
 }
 .playgame{
@@ -814,7 +924,7 @@ footer{
     align-items: end;
 }
 .pgimg02{
-    margin-left: -21vw;
+    margin-left: -12vw;
     bottom: -8vh;
     position: relative;
     height: 10rem;
@@ -828,7 +938,7 @@ footer{
 .playgametext>h1{
     margin-bottom: 1rem;
     font-size: 1.5rem;
-}
+} 
 
 /*         <!-- section03 0 --> */
 /*         <!-- section04 1 --> */
@@ -906,7 +1016,7 @@ footer{
     font-size: .8rem;
     margin-top: 5vh;
 }
-.fticon >i {
+.fticon>a >i {
     padding: 20px;
     font-size: 2rem;
     margin: 30px 0px;
@@ -925,7 +1035,7 @@ footer{
     margin: 0 auto;
 
 }
-.fticon > i{
+.fticon>a > i{
     padding: 10px 25px;
     margin: 0;
     font-size: 1.3rem;
